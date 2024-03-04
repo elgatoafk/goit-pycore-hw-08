@@ -357,8 +357,7 @@ def load_data(filename:str ="addressbook.pkl") -> AddressBook:
         with open(filename, "rb") as f:
             return pickle.load(f)
     except FileNotFoundError:
-        return AddressBook()  # Повернення нової адресної книги, якщо файл не знайдено
-
+        return AddressBook()  
 def main():
     """main This code defines a main function that serves as the entry point of a program.
     It creates an empty contacts dictionary and then enters a loop to interact with the user.
